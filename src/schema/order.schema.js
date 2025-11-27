@@ -8,7 +8,12 @@ export const orderSchema = gql`
     product_id: Int
     quantity: Int
     order_date: String
+
+    # Nested objects
+    user: User
+    product: Product
   }
+
 
   # QUERIES
   type Query {
